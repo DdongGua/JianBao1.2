@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:text="请致贱宝官方QQ群"
+        android:textSize="20dp" />
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="#DD2727">
+        <TextView
+            android:id="@+id/forgetpassword_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="524--914--620"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/jianbaoqq"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>

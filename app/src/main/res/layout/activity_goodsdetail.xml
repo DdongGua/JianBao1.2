@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/Gcollection"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="#0A0A0A"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/Gshoucang_mImg"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="65dp"
+                android:src="@mipmap/shoucang" />
+
+            <TextView
+                android:id="@+id/Gguan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="关注"
+                android:textColor="#EAEAEA"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Gcall"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="#EE0000"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="45dp"
+                android:src="@mipmap/dianhua" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="联系卖家"
+                android:textColor="#EAEAEA"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linear"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ScrollView
+            android:id="@+id/mS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:background="#ffffff">
+
+                    <LinearLayout
+                        android:id="@+id/viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:orientation="horizontal" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:text="关注度："
+                            android:textColor="#CD3700" />
+
+                        <TextView
+                            android:id="@+id/Gfollow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FF7F00" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/Gtag"
+                        android:layout_width="40dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/normal" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp">
+
+                    <TextView
+                        android:id="@+id/Gtitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="#ffffff"
+                        android:textColor="#1C1C1C"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#ededed" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="￥"
+                        android:textColor="#FF3030"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Gprice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FF3030"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#ededed" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="物品描述:"
+                        android:textColor="#CD3700"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Gdiscription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:textColor="#8B3626"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="5dp"
+                        android:background="#ededed" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5sp"
+                    android:background="#ffffff">
+
+                    <TextView
+                        android:id="@+id/Tv_connect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="33dp"
+                        android:textColor="#1C1C1C"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="2dp"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/Tv_connect"
+                        android:background="#698B69" />
+
+                    <TextView
+                        android:id="@+id/mobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/Tv_connect"
+                        android:text="电话:"
+                        android:textColor="#CD3700"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Gmobile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/mobile"
+                        android:textColor="#1C1C1C"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/wechat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/mobile"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/Tv_connect"
+                        android:text="微信:"
+                        android:textColor="#CD3700"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Gwechat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Gmobile"
+                        android:layout_toRightOf="@id/mobile"
+                        android:text="暂未公布"
+                        android:textColor="#1C1C1C"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/qq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/wechat"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/Tv_connect"
+                        android:text="QQ:"
+                        android:textColor="#CD3700"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Gqq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Gwechat"
+                        android:layout_toRightOf="@id/mobile"
+                        android:text="暂未公布"
+                        android:textColor="#1C1C1C"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/qq"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/Tv_connect"
+                        android:text="邮箱:"
+                        android:textColor="#CD3700"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/Gemail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Gqq"
+                        android:layout_toRightOf="@id/mobile"
+                        android:text="暂未公布"
+                        android:textColor="#1C1C1C"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#ededed" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="上架时间：" />
+
+                        <TextView
+                            android:id="@+id/Gissue_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="下架时间：" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="暂不下架" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="是否本人所属：" />
+
+                        <TextView
+                            android:id="@+id/Gowned"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

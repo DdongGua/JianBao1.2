@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mFrag_home_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FF4040">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/log" />
+
+        <ImageView
+            android:id="@+id/mFrag_home_search"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/btn_home_search_normal" />
+    </RelativeLayout>
+
+    <com.bgs.jianbao12.view.PullToRefrushView
+        android:id="@+id/mPullToRefrushView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.bgs.jianbao12.view.PullToRefrushView>
+</LinearLayout>
