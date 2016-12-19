@@ -97,6 +97,7 @@ public class Adapter_collection extends BaseAdapter {
         return view;
     }
 
+
     private class ViewHolder{
         private TextView mLv_time,mLv_title;
         private TextView mLv_price;
